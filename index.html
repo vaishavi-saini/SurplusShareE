@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurplusShare - Local Food Surplus Sharing</title>
+    <meta name="description" content="Connect with your community to share surplus food and reduce waste. SurplusShare helps you share food locally instead of throwing it away." />
+    <meta name="author" content="SurplusShare" />
+
+    <meta property="og:title" content="SurplusShare - Local Food Surplus Sharing" />
+    <meta property="og:description" content="Connect with your community to share surplus food and reduce waste." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@surplusshare" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/">SurplusShare</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="listings.html">Food Listings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Share Food, Not Waste</h1>
+          <p>Connect with your local community to share surplus food and reduce waste. SurplusShare helps you share food locally instead of throwing it away.</p>
+          <div class="hero-buttons">
+            <a href="/listings.html" class="btn btn-primary">Find Food</a>
+            <a href="/share.html" class="btn btn-secondary">Share Food</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="c:\Users\Akshit\Downloads\download (3).jpeg" alt="Fresh vegetables and fruits" class="img-responsive">
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">1</div>
+            <h3>List Your Surplus</h3>
+            <p>Take a photo of food you won't use and create a quick listing.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">2</div>
+            <h3>Connect Locally</h3>
+            <p>Neighbors in need can request your surplus items.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">3</div>
+            <h3>Share & Reduce Waste</h3>
+            <p>Arrange pick-up or drop-off and help reduce food waste.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-listings">
+      <div class="container">
+        <h2 class="section-title">Available Food Near You</h2>
+        <div class="listings-grid" id="food-listings">
+          <!-- Food listings will be loaded here by JavaScript -->
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="c:\Users\Akshit\Downloads\download.jpeg" alt="Fresh vegetables" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <h3>Fresh Garden Vegetables</h3>
+              <p class="listing-location">Downtown, 2.3 miles away</p>
+              <p class="listing-description">Assorted vegetables from my garden: tomatoes, cucumbers, and peppers.</p>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="c:\Users\Akshit\Downloads\download (1).jpeg" alt="Bread loaves" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <h3>Fresh Baked Bread (4 loaves)</h3>
+              <p class="listing-location">Westside, 1.5 miles away</p>
+              <p class="listing-description">Baked too much bread for an event. Still fresh, baked this morning!</p>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="c:\Users\Akshit\Downloads\download (2).jpeg" alt="Canned goods" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <h3>Canned Goods & Dry Foods</h3>
+              <p class="listing-location">Eastside, 3.1 miles away</p>
+              <p class="listing-description">Moving soon and need to clear my pantry. All items well within expiration dates.</p>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+        </div>
+        <div class="view-all">
+          <a href="/listings.html" class="btn btn-outline">View All Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <h2 class="section-title">Why Share Food?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🌍</div>
+            <h3>Reduce Food Waste</h3>
+            <p>According to the UN, one-third of all food produced globally is wasted. Together, we can change that.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">👥</div>
+            <h3>Build Community</h3>
+            <p>Connect with neighbors and build a stronger, more resilient community through food sharing.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💰</div>
+            <h3>Save Money</h3>
+            <p>Reduce your grocery bills by sharing excess food and receiving items from others.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌱</div>
+            <h3>Live Sustainably</h3>
+            <p>Make sustainability a practical part of your everyday life through simple actions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Reduce Waste?</h2>
+        <p>Join thousands of people in your community already sharing surplus food.</p>
+        <a href="/share.html" class="btn btn-primary btn-large">Share Food Now</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>SurplusShare</h3>
+            <p>Connecting communities to share food, not waste it. Building a more sustainable and connected neighborhood.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/listings.html">Food Listings</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SurplusShare. All rights reserved.</p>
+          <p>Website created by Vaishavi Saini, 27188, CSE-3</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
