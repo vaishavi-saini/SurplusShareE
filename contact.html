@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - SurplusShare</title>
+    <meta name="description" content="Get in touch with the SurplusShare team for questions, feedback, or support." />
+    <meta name="author" content="SurplusShare" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/">SurplusShare</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/listings.html">Food Listings</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <h2>Send us a message</h2>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="partnership">Partnership Opportunities</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <div class="info-card">
+              <h3>Email</h3>
+              <p><a href="mailto:hello@surplusshare.org">hello@surplusshare.org</a></p>
+            </div>
+            <div class="info-card">
+              <h3>Phone</h3>
+              <p>(555) 123-4567</p>
+            </div>
+            <div class="info-card">
+              <h3>Address</h3>
+              <p>123 Sharing Street<br>Community Plaza<br>Anytown, ST 12345</p>
+            </div>
+            <div class="info-card">
+              <h3>Hours</h3>
+              <p>Support Hours: Monday-Friday<br>9:00 AM - 5:00 PM EST</p>
+            </div>
+            
+            <div class="social-contact">
+              <h3>Follow Us</h3>
+              <div class="social-buttons">
+                <a href="#" class="social-btn">Facebook</a>
+                <a href="#" class="social-btn">Twitter</a>
+                <a href="#" class="social-btn">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-section">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h3>How do I share food on SurplusShare?</h3>
+              <p>Creating a listing is simple! Just click on "Share Food" from the homepage, upload a photo of your surplus food, provide a brief description, and set your location and availability.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is it safe to share and receive food?</h3>
+              <p>We recommend following basic food safety guidelines. Only share food that is still fresh and has been stored properly. As a recipient, use your judgment and ask questions about the food's preparation and storage.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is SurplusShare available in my area?</h3>
+              <p>SurplusShare is community-driven and can work anywhere people want to share food! Check the app to see if there are active users in your area, and if not, be the first to start sharing!</p>
+            </div>
+            <div class="faq-item">
+              <h3>How can I suggest features or report issues?</h3>
+              <p>We welcome your feedback! Use the contact form on this page or email us directly at feedback@surplusshare.org with your suggestions or issues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>SurplusShare</h3>
+            <p>Connecting communities to share food, not waste it. Building a more sustainable and connected neighborhood.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/listings.html">Food Listings</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SurplusShare. All rights reserved.</p>
+          <p>Website created by Vaishavi Saini, 27188, CSE-3</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="/script.js"></script>
+    <script src="/contact.js"></script>
+  </body>
+</html>

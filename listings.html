@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Listings - SurplusShare</title>
+    <meta name="description" content="Browse available food surplus in your area and request items from neighbors." />
+    <meta name="author" content="SurplusShare" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/">SurplusShare</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/listings.html" class="active">Food Listings</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Food Listings</h1>
+        <p>Browse available food surplus in your community</p>
+      </div>
+    </section>
+
+    <section class="listings-section">
+      <div class="container">
+        <div class="filter-container">
+          <div class="search-box">
+            <input type="text" placeholder="Search listings..." id="search-input">
+          </div>
+          <div class="filters">
+            <select id="category-filter">
+              <option value="">All Categories</option>
+              <option value="produce">Fresh Produce</option>
+              <option value="baked">Baked Goods</option>
+              <option value="canned">Canned & Packaged</option>
+              <option value="prepared">Prepared Meals</option>
+              <option value="other">Other</option>
+            </select>
+            <select id="distance-filter">
+              <option value="">Any Distance</option>
+              <option value="1">Under 1 mile</option>
+              <option value="3">Under 3 miles</option>
+              <option value="5">Under 5 miles</option>
+              <option value="10">Under 10 miles</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="listings-grid" id="all-listings">
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="Fresh vegetables" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <span class="listing-category">Fresh Produce</span>
+              <h3>Fresh Garden Vegetables</h3>
+              <p class="listing-location">Downtown, 2.3 miles away</p>
+              <p class="listing-description">Assorted vegetables from my garden: tomatoes, cucumbers, and peppers.</p>
+              <div class="listing-meta">
+                <span class="listing-date">Listed 2 hours ago</span>
+                <span class="listing-expiry">Available until: Tomorrow</span>
+              </div>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d" alt="Bread loaves" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <span class="listing-category">Baked Goods</span>
+              <h3>Fresh Baked Bread (4 loaves)</h3>
+              <p class="listing-location">Westside, 1.5 miles away</p>
+              <p class="listing-description">Baked too much bread for an event. Still fresh, baked this morning!</p>
+              <div class="listing-meta">
+                <span class="listing-date">Listed 5 hours ago</span>
+                <span class="listing-expiry">Available until: Today</span>
+              </div>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a" alt="Canned goods" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <span class="listing-category">Canned & Packaged</span>
+              <h3>Canned Goods & Dry Foods</h3>
+              <p class="listing-location">Eastside, 3.1 miles away</p>
+              <p class="listing-description">Moving soon and need to clear my pantry. All items well within expiration dates.</p>
+              <div class="listing-meta">
+                <span class="listing-date">Listed 1 day ago</span>
+                <span class="listing-expiry">Available until: Next week</span>
+              </div>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" alt="Fruit basket" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <span class="listing-category">Fresh Produce</span>
+              <h3>Seasonal Fruit Basket</h3>
+              <p class="listing-location">Northside, 1.8 miles away</p>
+              <p class="listing-description">Received this as a gift but I'm allergic to some of the fruits. Contains apples, oranges, and pears.</p>
+              <div class="listing-meta">
+                <span class="listing-date">Listed 3 hours ago</span>
+                <span class="listing-expiry">Available until: Tomorrow</span>
+              </div>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04" alt="Homemade lasagna" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <span class="listing-category">Prepared Meals</span>
+              <h3>Homemade Vegetable Lasagna</h3>
+              <p class="listing-location">Downtown, 0.5 miles away</p>
+              <p class="listing-description">Made too much lasagna for dinner. Can serve 4-6 people, vegetarian friendly.</p>
+              <div class="listing-meta">
+                <span class="listing-date">Listed 1 hour ago</span>
+                <span class="listing-expiry">Available until: Today</span>
+              </div>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+          
+          <div class="listing-card">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="Baking ingredients" class="img-responsive">
+            </div>
+            <div class="listing-content">
+              <span class="listing-category">Other</span>
+              <h3>Baking Ingredients</h3>
+              <p class="listing-location">Southside, 4.2 miles away</p>
+              <p class="listing-description">Extra baking supplies I won't use: flour, sugar, baking powder, and vanilla extract.</p>
+              <div class="listing-meta">
+                <span class="listing-date">Listed 2 days ago</span>
+                <span class="listing-expiry">Available until: Next week</span>
+              </div>
+              <a href="#" class="btn btn-sm">Request Item</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn next">Next →</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cta share-cta">
+      <div class="container">
+        <h2>Have Food to Share?</h2>
+        <p>List your surplus food items and connect with neighbors who can use them.</p>
+        <a href="/share.html" class="btn btn-primary btn-large">Share Your Surplus</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>SurplusShare</h3>
+            <p>Connecting communities to share food, not waste it. Building a more sustainable and connected neighborhood.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/listings.html">Food Listings</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SurplusShare. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="/script.js"></script>
+    <script src="/listings.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Your Food - SurplusShare</title>
+    <meta name="description" content="Share your surplus food with neighbors and reduce food waste in your community." />
+    <meta name="author" content="SurplusShare" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/">SurplusShare</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/listings.html">Food Listings</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Share Your Surplus Food</h1>
+        <p>Help reduce food waste and connect with your community</p>
+      </div>
+    </section>
+
+    <section class="share-section">
+      <div class="container">
+        <div class="share-container">
+          <div class="share-form-container">
+            <h2>Create a Food Listing</h2>
+            <form id="share-form" class="share-form">
+              <div class="form-group">
+                <label for="food-title">Food Item Title</label>
+                <input type="text" id="food-title" name="food-title" placeholder="e.g., Fresh Garden Vegetables" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                  <option value="">Select a category</option>
+                  <option value="produce">Fresh Produce</option>
+                  <option value="baked">Baked Goods</option>
+                  <option value="canned">Canned & Packaged</option>
+                  <option value="prepared">Prepared Meals</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Provide details about the food, quantity, etc." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="location">Pickup Location</label>
+                <input type="text" id="location" name="location" placeholder="Neighborhood or general area" required>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group half">
+                  <label for="expiry">Available Until</label>
+                  <input type="date" id="expiry" name="expiry" required>
+                </div>
+                <div class="form-group half">
+                  <label for="pickup-time">Best Pickup Time</label>
+                  <input type="text" id="pickup-time" name="pickup-time" placeholder="e.g., Evenings after 6pm">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="food-image">Upload Image</label>
+                <div class="file-input-container">
+                  <input type="file" id="food-image" name="food-image" accept="image/*">
+                  <label for="food-image" class="file-input-label">Choose File</label>
+                  <span class="file-name">No file chosen</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <label for="terms">I confirm this food is still fresh and safe to consume</label>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Create Listing</button>
+            </form>
+          </div>
+          
+          <div class="share-info">
+            <h2>Sharing Guidelines</h2>
+            <div class="guideline-card">
+              <h3>Food Safety</h3>
+              <ul>
+                <li>Only share food that is still fresh and safe to eat</li>
+                <li>Provide accurate information about when it was prepared</li>
+                <li>Mention any allergens that may be present</li>
+                <li>Package food properly for safe handling</li>
+              </ul>
+            </div>
+            
+            <div class="guideline-card">
+              <h3>Good Photos</h3>
+              <ul>
+                <li>Take clear, well-lit photos of your food items</li>
+                <li>Show the actual items you're sharing, not stock photos</li>
+                <li>Include packaging if relevant</li>
+                <li>Photos help recipients know what to expect</li>
+              </ul>
+            </div>
+            
+            <div class="guideline-card">
+              <h3>Communication</h3>
+              <ul>
+                <li>Be responsive to messages from interested recipients</li>
+                <li>Provide clear pickup instructions</li>
+                <li>Update or remove your listing when the food is no longer available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="testimonial-section">
+      <div class="container">
+        <h2 class="section-title">What Sharers Are Saying</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote">"I used to throw away so much produce from my garden. Now I share with my neighbors and have made wonderful connections in my community!"</div>
+            <div class="author">- Maria T., Regular Sharer</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote">"As a baker, I always have extra bread and pastries. SurplusShare has helped me find a purpose for my excess baked goods."</div>
+            <div class="author">- James K., Local Baker</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote">"I've reduced my food waste by over 80% since I started sharing my extras on SurplusShare. It feels great to help others too."</div>
+            <div class="author">- Aisha M., Food Waste Advocate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>SurplusShare</h3>
+            <p>Connecting communities to share food, not waste it. Building a more sustainable and connected neighborhood.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/listings.html">Food Listings</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SurplusShare. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="/script.js"></script>
+    <script src="/share.js"></script>
+  </body>
+</html>
